@@ -1,0 +1,6 @@
+{
+  "buildCommand": "node scripts/build.js && next build",
+  "installCommand": "bun install",
+  "framework": "nextjs",
+  "regions": ["iad1"]
+}

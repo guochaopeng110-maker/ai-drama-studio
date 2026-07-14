@@ -1,0 +1,110 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+!.env.example
+
+# vercel
+.vercel
+
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+local-*
+.claude
+.z-ai-config
+*.log
+dev.log
+dev.out.log
+test
+prompt
+
+server.log
+# Skills directory
+/skills/
+
+# Prisma SQLite mode marker (local dev only)
+prisma/.sqlite-mode
+
+# Subprojects - separate independent projects, not part of this repo
+financial-services/
+huobao-drama-ai/
+worldmonitor/
+Horizon/
+AiToEarn/
+TradingAgents-CN/
+
+# Download and agent context directories
+download/
+agent-ctx/
+db/
+
+# File uploads (local dev only — production uses Vercel Blob)
+data/uploads/
+# Ignore reference project and database
+Toonflow-app/
+db/
+
+# Local workspace copies (never commit)
+*-workspace/
+worklog.md
+.zscripts/dev.pid
+
+# BFG repo cleaner reports
+*.bfg-report/
+
+# === Local dev / unrelated files (should never be in repo) ===
+
+# Teamo CLI local scripts and OAuth artifacts
+teamo-*.mjs
+teamo_*.mjs
+teamo-*.txt
+teamo-*.json
+teamocode_*
+oauth-flow.json
+
+# Hex2077 / unrelated JSON data dumps
+hex2077_*.json
+
+# Test scripts for external services (not part of this project)
+test-mimo-*.mjs
+
+# Roadmap generator (local dev tool)
+generate-roadmap.js
+
+# Data skills directory (local AI skill prompts, not part of the web app)
+data/skills/
+
+# Caddyfile (local dev reverse proxy, not needed in repo)
+Caddyfile
